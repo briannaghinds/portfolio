@@ -3,14 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
 
-    <!-- change favicon here -->
+    <!-- change favicon -->
 
-    <!-- stylesheet -->
-    <link href="style.css" type="stylesheet">
+    <!-- link style sheet -->
+    <link href="style.css" rel="stylesheet">
+    <link href="mediaqueries.css" rel="stylesheet">
 </head>
 <body>
-    
+
+    <!-- top navigation bar -->
+    <nav id="desktop-nav">
+        <div class="logo">John Doe</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hamburger menu -->
+    <nav id="hamburger-nav">
+        <div class="logo">John Doe</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sections -->
+    <!-- 1: HOME SECTION -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Brianna Hinds Profie Picture">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Brianna Hinds</h1>
+            <p class="section__text__p2">AI/ML/Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Brianna_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/brianna-hinds'">
+                <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/briannaghinds'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2: ABOUT SECTION -->
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br> AI/ML/Software Developement</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Obtaining a B.S Computer Science <br> Minors: Communication, Data Analytics</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>A Computer Science student at Houston Christian University, I have grown my skills in programming and problem solving, with a newfound interest in Machine Learning and Artifical Intelligence. I am a TA and a mentor to the freshman class inspiring them to create and build projects that peak their interests. I am also part of HCU's D1 Track and Field team, teaching me discipline, grit, and passion; this is something that I outsource to all my other activities.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow to Next Section" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <!-- 3: EXPERIENCE SECTION -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- FIRST CONTAINER -->
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Software Development</h2>
+                    <div class="article-container">
+                        <!-- EXPERIENCE 1 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 2 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 3 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 4 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 5 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 6 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- SECOND CONTAINER -->
+                <div class="details-container">
+                    <h2 class="experience-subtitle">AI/ML Engineering</h2>
+                    <div class="article-container">
+                        <!-- EXPERIENCE 1 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>PyTorch</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 2 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Numpy</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 3 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Scikit-Learn</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 4 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Statistics</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 5 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Neural Networks</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <!-- EXPERIENCE 6 -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>ML Models</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- arrow image -->
+        <img src="./assets/arrow.png" alt="Arrow to Next Section" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <!-- 4: PROJECT SECTION -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- PROJECT 1 -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">AI Inventory Management</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/RFID_AI_TechPaper.pdf')">Technical Paper</button>
+                    </div> 
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">Sky5O</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div> 
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" class="icon arrow" alt="Arrow to Move to Next Section" onclick="location.href='./#contact'">
+    </section>
+
+    <!-- 5: CONTACT SECTION -->
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:briden32016@gmail.com">briden32016@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/brianna-hinds">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Have an amazing day!!!</p>
+    </footer>
+
+
+    <!-- add the javascript file -->
+    <script src="script.js"></script>
 </body>
 </html>
